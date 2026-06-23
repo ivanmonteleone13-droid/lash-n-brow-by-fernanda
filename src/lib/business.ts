@@ -82,7 +82,7 @@ export const business = {
       icon: "👁️",
       description: "Lashlift hos LASH N' BROW By Fernanda — noggrant utfört med premiumprodukter och personlig service.",
       duration: "30–90 min",
-      priceFrom: null,
+      priceFrom: 1350,
       note: "Kontakta oss för aktuella priser.",
     },
     {
@@ -91,7 +91,7 @@ export const business = {
       icon: "🌸",
       description: "Browlift hos LASH N' BROW By Fernanda — noggrant utfört med premiumprodukter och personlig service.",
       duration: "30–90 min",
-      priceFrom: null,
+      priceFrom: 750,
       note: "Kontakta oss för aktuella priser.",
     },
     {
@@ -100,7 +100,7 @@ export const business = {
       icon: "💫",
       description: "PhiBrows microblading hos LASH N' BROW By Fernanda — noggrant utfört med premiumprodukter och personlig service.",
       duration: "30–90 min",
-      priceFrom: null,
+      priceFrom: 4000,
       note: "Kontakta oss för aktuella priser.",
     },
     {
@@ -113,6 +113,7 @@ export const business = {
       note: "Kontakta oss för aktuella priser.",
     },
   ],
+  logoImage: "/images/logo.jpg" as string | null,
   heroImage: "/images/hero.jpg",
   aboutImage: "/images/gallery-1.jpg",
   gallery: [
