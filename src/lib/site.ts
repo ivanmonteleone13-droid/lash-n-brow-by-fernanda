@@ -1,5 +1,5 @@
 /** Production URL — canonical domain on Vercel. */
-export const PRODUCTION_URL = "https://business-19-lash-n-brow-by-fernanda.vercel.app";
+export const PRODUCTION_URL = "https://lash-n-brow-by-fernanda.vercel.app";
 
 const DEV_URL = "http://localhost:3019";
 

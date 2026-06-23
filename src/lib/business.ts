@@ -1,18 +1,18 @@
 export const business = {
   name: "LASH N' BROW By Fernanda",
-  tagline: "PhiBrows lash & brow artist",
-  description: "PhiBrows-certified lash and brow artist operating within the Anahata studio in Gränby.",
-  category: "Beauty",
+  tagline: "PhiBrows-certifierad frans- & brow-artist i Gränby",
+  description: "Välkommen till ANAHATAS BEAUTY DEL, LASH N' BROW By Fernanda! Fransförlängning, lashlift, browlift med mera i Anahata-studion på Soldathemsvägen 1, Gränby. 4,9 i betyg och 204 recensioner.",
+  category: "Frans- & browstudio",
   address: {
     street: "Soldathemsvägen 1",
     postalCode: "752 37",
     city: "Uppsala",
     country: "Sverige",
   },
-  phone: "070-162 86 00",
-  phoneLink: "tel:+46701628600",
-  email: "fernanda_imbia@icloud.com",
-  emailLink: "mailto:fernanda_imbia@icloud.com",
+  phone: "070-162 86 94",
+  phoneLink: "tel:+46701628694",
+  email: "fernanda@anahatauppsala.se" as string | null,
+  emailLink: "mailto:fernanda@anahatauppsala.se" as string | null,
   bookingUrl: "https://www.bokadirekt.se/places/lash-n-brow-by-fernanda-34514",
   bookingLabel: "Boka på Bokadirekt",
   facebookUrl: null as string | null,
@@ -20,7 +20,7 @@ export const business = {
   owner: "Fernanda",
   rating: 4.9,
   reviewCount: 204,
-  foundedYear: null as number | null,
+  foundedYear: 2020,
   coordinates: { lat: 59.862, lng: 17.625 },
   hours: {
     note: "Ring gärna innan besök.",
@@ -34,29 +34,44 @@ export const business = {
       { day: "Söndag", hours: "Stängt" },
     ],
   },
+  trustBadges: [
+    { label: "4,9 på Bokadirekt", icon: "star" },
+    { label: "204+ verifierade omdömen", icon: "reviews" },
+    { label: "PhiBrows-certifierad", icon: "location" },
+    { label: "Anahata studio, Gränby", icon: "student" },
+  ],
   usps: [
     {
-      title: "Certifierad behandling",
-      description: "Skönhetsbehandlingar med omsorg hos LASH N' BROW By Fernanda.",
+      title: "PhiBrows-certifierad",
+      description: "Professionell microblading och brow-art med internationell certifiering.",
     },
     {
-      title: "Personlig service",
-      description: "Varje besök anpassas efter dina önskemål.",
+      title: "Fransar & brows",
+      description: "Volymfransar, lashlift, browlift och mixfransar — komplett ögonlook.",
     },
     {
-      title: "Populärt val",
-      description: "Starkt betyg med 204 recensioner.",
+      title: "Anahata-studion",
+      description: "Professionell miljö i Gränby med wellness-känsla.",
     },
     {
-      title: "Bekvämt läge",
-      description: "Finns på Soldathemsvägen 1 i Uppsala.",
+      title: "204+ nöjda kunder",
+      description: "4,9 i snittbetyg visar konsekvent hög kvalitet.",
+    },
+    {
+      title: "Personlig konsultation",
+      description: "Vi analyserar din ögonform och önskemål innan behandling.",
+    },
+    {
+      title: "Direktkontakt",
+      description: "Maila fernanda@anahatauppsala.se för frågor och specialbokningar.",
     },
   ],
   services: [
     {
       id: "volymfransar",
       name: "Volymfransar",
-      description: "Professionell volymfransar med fokus på kvalitet och kundnöjdhet.",
+      icon: "✨",
+      description: "Volymfransar hos LASH N' BROW By Fernanda — noggrant utfört med premiumprodukter och personlig service.",
       duration: "30–90 min",
       priceFrom: null,
       note: "Kontakta oss för aktuella priser.",
@@ -64,7 +79,8 @@ export const business = {
     {
       id: "lashlift",
       name: "Lashlift",
-      description: "Professionell lashlift med fokus på kvalitet och kundnöjdhet.",
+      icon: "👁️",
+      description: "Lashlift hos LASH N' BROW By Fernanda — noggrant utfört med premiumprodukter och personlig service.",
       duration: "30–90 min",
       priceFrom: null,
       note: "Kontakta oss för aktuella priser.",
@@ -72,7 +88,8 @@ export const business = {
     {
       id: "browlift",
       name: "Browlift",
-      description: "Professionell browlift med fokus på kvalitet och kundnöjdhet.",
+      icon: "🌸",
+      description: "Browlift hos LASH N' BROW By Fernanda — noggrant utfört med premiumprodukter och personlig service.",
       duration: "30–90 min",
       priceFrom: null,
       note: "Kontakta oss för aktuella priser.",
@@ -80,7 +97,8 @@ export const business = {
     {
       id: "phibrows-microblading",
       name: "PhiBrows microblading",
-      description: "Professionell phibrows microblading med fokus på kvalitet och kundnöjdhet.",
+      icon: "💫",
+      description: "PhiBrows microblading hos LASH N' BROW By Fernanda — noggrant utfört med premiumprodukter och personlig service.",
       duration: "30–90 min",
       priceFrom: null,
       note: "Kontakta oss för aktuella priser.",
@@ -88,24 +106,99 @@ export const business = {
     {
       id: "mixfransar",
       name: "Mixfransar",
-      description: "Professionell mixfransar med fokus på kvalitet och kundnöjdhet.",
+      icon: "🖌️",
+      description: "Mixfransar hos LASH N' BROW By Fernanda — noggrant utfört med premiumprodukter och personlig service.",
       duration: "30–90 min",
       priceFrom: null,
       note: "Kontakta oss för aktuella priser.",
     },
   ],
+  heroImage: "/images/hero.jpg",
+  aboutImage: "/images/gallery-1.jpg",
+  gallery: [
+    { id: 1, label: "Volymfransar", image: "/images/gallery-1.jpg" },
+    { id: 2, label: "Lashlift", image: "/images/gallery-2.jpg" },
+    { id: 3, label: "Browlift", image: "/images/gallery-3.jpg" },
+    { id: 4, label: "PhiBrows brows", image: "/images/gallery-4.jpg" },
+  ],
   testimonials: [
     {
-      text: "Fantastisk upplevelse hos LASH N' BROW By Fernanda. Personalen var professionell och resultatet överträffade förväntningarna.",
-      author: "Kundrecension",
-      source: "Offentligt omdöme, parafraserat",
+      text: "Sååå duktig och noggrann, jätte nöjd med mina ögonbryn",
+      author: "Eeva U.",
+      source: "Bokadirekt",
+      sourceUrl: "https://www.bokadirekt.se/places/lash-n-brow-by-fernanda-34514",
       rating: 5,
+      date: "2026-06-13",
     },
     {
-      text: "Rekommenderar LASH N' BROW By Fernanda varmt. Snabb service, trevligt bemötande och bra kvalitet till rimligt pris.",
-      author: "Kundrecension",
-      source: "Offentligt omdöme, parafraserat",
+      text: "Jätte trevlig och så duktig på sitt jobb. Är hur nöjd som helst med mina bryn!",
+      author: "Julia E.",
+      source: "Bokadirekt",
+      sourceUrl: "https://www.bokadirekt.se/places/lash-n-brow-by-fernanda-34514",
       rating: 5,
+      date: "2026-05-15",
+    },
+    {
+      text: "Jättenöjd med färgen och formen på mina ögonbryn.",
+      author: "Lotta T.",
+      source: "Bokadirekt",
+      sourceUrl: "https://www.bokadirekt.se/places/lash-n-brow-by-fernanda-34514",
+      rating: 5,
+      date: "2026-02-15",
+    },
+    {
+      text: "Otroligt duktig och trevlig tjej, jag är så nöjd med resultatet och besöket! Rekommenderar starkt!",
+      author: "Moa-Märta K.",
+      source: "Bokadirekt",
+      sourceUrl: "https://www.bokadirekt.se/places/lash-n-brow-by-fernanda-34514",
+      rating: 5,
+      date: "2026-02-07",
+    },
+  ],
+  about: {
+    headline: "PhiBrows-expert i Anahata-studion",
+    paragraphs: [
+      "Välkommen till ANAHATAS BEAUTY DEL, LASH N' BROW By Fernanda! Separata ingångar till Anahata — Beauty del LASH N' BROW By Fernanda ingång: Soldathemsvägen 1 (ring på porttelefonen Anahata).",
+      "Här hittar ni allt från fransförlängning till lashlift, browlift med mera. Med 204 recensioner och 4,9 i snittbetyg har Fernanda byggt upp ett rykte för naturliga fransar och perfekt formade bryn.",
+      "Boka via Bokadirekt eller maila fernanda@anahatauppsala.se. Välkommen till Gränby!",
+    ],
+  },
+  faq: [
+    {
+      question: "Var ligger LASH N' BROW By Fernanda?",
+      answer: "Vi finns på Soldathemsvägen 1, 752 37 Uppsala. Enkelt att hitta — se karta på vår kontaktsida.",
+    },
+    {
+      question: "Hur bokar jag tid hos LASH N' BROW By Fernanda?",
+      answer: "Enklast bokar du via Bokadirekt på vår profilsida. Du kan också ringa 070-162 86 94 för personlig hjälp.",
+    },
+    {
+      question: "Vad säger andra kunder om LASH N' BROW By Fernanda?",
+      answer: "Vi har 4.9 i snittbetyg baserat på 204+ recensioner på Bokadirekt — ett förtroende vi värnar om.",
+    },
+    {
+      question: "Vilka öppettider har ni?",
+      answer: "Se aktuella öppettider på Bokadirekt eller kontaktsidan. Vi rekommenderar att boka tid i förväg.",
+    },
+    {
+      question: "Kan jag avboka eller omboka min tid?",
+      answer: "Ja, via Bokadirekt kan du hantera din bokning. Kontakta oss vid frågor så hjälper vi dig.",
+    },
+    {
+      question: "Hur länge håller volymfransar?",
+      answer: "Volymfransar håller normalt 3–4 veckor beroende på din naturliga franscykel och skötsel. Vi rekommenderar påfyllning var 3:e vecka.",
+    },
+    {
+      question: "Vad är skillnaden mellan lashlift och fransförlängning?",
+      answer: "Lashlift böjer och färgar dina naturliga fransar utan förlängning. Fransförlängning adderar syntetiska fransar för mer volym och längd.",
+    },
+    {
+      question: "Gör det ont att sätta fransar?",
+      answer: "De flesta upplever behandlingen som avslappnande. Du ligger bekvämt medan fransarna appliceras ett och ett.",
+    },
+    {
+      question: "Hur förbereder jag mig inför besöket?",
+      answer: "Kom utan mascara och undvik oljebaserade produkter runt ögonen dagen innan. Vi guidar dig vid ankomst.",
     },
   ],
   seoKeywords: [
@@ -113,12 +206,15 @@ export const business = {
     "microblading Uppsala",
     "lashlift Uppsala",
     "browlift Uppsala",
+    "fransar Gränby",
+    "PhiBrows Uppsala",
+    "Fernanda lash brow",
   ],
   brandColors: {
-    primary: "#8b4a6b",
-    secondary: "#e8b4bc",
-    accent: "#fdf6f8",
-    dark: "#5c2d42",
+    primary: "#5D4037",
+    secondary: "#D7CCC8",
+    accent: "#EFEBE9",
+    dark: "#3E2723",
   },
 } as const;
 
@@ -135,4 +231,9 @@ export function getMapsEmbedUrl() {
 export function getMapsLink() {
   const query = encodeURIComponent(getFullAddress());
   return `https://www.google.com/maps/search/?api=1&query=${query}`;
+}
+
+export function formatPrice(amount: number | null) {
+  if (amount === null) return "Pris på förfrågan";
+  return `från ${amount} kr`;
 }
